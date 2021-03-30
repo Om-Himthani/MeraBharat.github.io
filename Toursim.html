@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>मेरा भारत महान </title>
+<link rel="stylesheet" href="styl.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url(3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+nav{
+    width: 100%;
+    height: 15vh;
+   
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+}
+a{
+
+    text-decoration: none;
+    font-size: 25px;
+    padding-left: 25px;
+    color: white;
+    padding-right: 25px;
+}
+.merabharat{
+    padding-left: 50px;
+}
+.h3{
+    color: yellow;
+    font-family:cursive;
+font-size: 25px;
+}
+main{
+    padding-top: 50px;
+ 
+    font-family:cursive;
+font-size: 25px;
+}
+.t{
+    color: yellow;
+}
+@media only screen and (max-width:800px){
+    h1{
+        font-size: 18px;
+        padding-left: 40px;
+    }
+    .merabharat{
+        padding-top: 30px;
+        padding-right: 50px;
+    }
+}
+.bars{
+    display: none;
+}
+.h3{
+    font-size: 15px;
+}
+@media only screen and (max-width:729px){
+    .a{
+        display: none;
+    font-size: 25px;
+margin-top:  50px ;    
+}
+.bars{
+    float: right;
+display: block;   
+    margin-right: 10px;
+    font-size: 30px;
+   
+    color: white;
+  
+}
+
+a li{
+    display: block;
+    
+}
+}
+</style>
+</head>
+<body>
+    <header>
+
+        <nav>     
+               <div class="merabharat">
+
+        <h1 class="animated infinite heartBeat">मेरा भारत महान </h1>
+    </div>
+ <ul class="a animated slideInDown" id="a">
+    <li><a class="home" href="index.html">Home</a></li>
+    <li><a class="t" href="Toursim.html">Toursim Places</a></li>
+    <li><a href="https://www.youtube.com/channel/UC4skEoVx3doDt4FvnLogz6A">About us</a></li>
+    
+    <li><a href="contact.html">Contact us</a></li>
+
+</ul>
+    <a href="#" onclick="slideshow()" class="bars"><i class="fa fa-bars" aria-hidden="true"></i></a>
+</nav>
+    <main>
+<section>
+        <h2 id="h1"> 10 best tourism Places in India are : </h2>
+        <h3 class="h3"> 1.  Taj Mahal, Agra </h3>
+        <h3 class="h3"> 2.  Hawa Mahal , Jaipur </h3>
+        <h3 class="h3"> 3.  Ladakh </h3>
+        <h3 class="h3"> 4.  Qutab Minar ,  New Delhi</h3>
+        <h3 class="h3"> 5.  Red Fort ,  New Delhi </h3>
+        <h3 class="h3"> 6.  India Gate ,  New Delhi  </h3>
+        <h3 class="h3"> 7.  Lotus Temple , New Delhi</h3>
+        <h3 class="h3"> 8.  GateWay Of India , Mumbai</h3>
+        <h3 class="h3"> 9.  Rann of Kutch , Gujrat </h3>
+        <h3 class="h3"> 10. Golden Temple , Amritsar</h3>
+    </section>
+    </main>
+
+
+</header>
+    <script>
+        function slideshow(){
+            var x=document.getElementById('a');
+            if(x.style.display==="none"){
+                x.style.display="block";
+            }
+        else{
+            x.style.display="none";
+        }
+        }
+    </script>
+</body>
+</html>
